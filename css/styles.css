@@ -935,13 +935,16 @@ img {
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
-
+/* Розмітка модального вікна */
 .close {
     display: flex;
+    position: absolute;
     cursor: pointer;
+    top: 0;
+    right: 0;
   
-    margin-left: 490px;
-    margin-top: 8px;
+    margin-right: 8px;
+    margin-top: 0;
     padding: 6px;
 
     border-radius: 50%;
@@ -950,9 +953,120 @@ img {
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.modal-title {
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    padding-top: 33px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 0;
+    margin-bottom: 12px;
+}
+
+.form-field {
+    position: relative;
+    display: flex; 
+    flex-direction: column;
+    /* min-width: 448px; */
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 10px;
+
+}
+
+.form-field label {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    margin-bottom: 4px;
+
+    color: var(--text-color);
+}
+
+.form-field input {
+
+    margin: 0;
+    padding-top: 11px;
+    padding-left: 42px;
+    padding-bottom: 11px;
+    /* min-width: 448px; */
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+
+textarea {
+    resize: none;
+    font-family: Roboto, sans-serif;
+    padding: 12px 16px;
+
+    min-width: 448px;
+    min-height: 120px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+
+.form-field textarea::placeholder {
+
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+}
+
+/* Іконки-позиціювання */
+
+.person {
+    position: absolute;
+    top: 28px;
+    left: 52px;
+    transform: translateY(10%);
+}
+.phone {
+    position: absolute;
+    top: 28px;
+    left: 52px;
+}
+
+.email {
+    position: absolute;
+    top: 28px;
+    left: 52px;
+}
+/* Чекбокс */
+.check {
+    padding-left: 51px;
+    padding-right: 52px;
+}
+
+.checkbox {
+    appearance: none;
+    position: absolute;
+
+}
+
 
 /* section, */
 /* header, */
 /* footer { */
     /* outline: 2px solid blue; */
 /* } */
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
