@@ -1051,7 +1051,36 @@ textarea {
     position: absolute;
 
 }
+.checkbox:checked + .vector {
+    background-color: var(--address-color);
+}
 
+.checkbox-label {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    
+    background-color:var(--text-color);
+    background-image: url('../images/icons.svg/#icon-vector');
+}
+
+.text-decor {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-decoration-line: underline;
+    
+    color:var(--accent-color);
+}
+.vector {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+
+    border: 2px solid var(--primary-text-color);
+    border-radius: 4px;
+
+}
 
 /* section, */
 /* header, */
