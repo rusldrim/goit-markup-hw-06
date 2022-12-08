@@ -944,9 +944,6 @@ img {
     text-align: center;
     letter-spacing: 0.03em;
 
-    padding-top: 33px;
-    padding-left: 40px;
-    padding-right: 40px;
     margin: 0;
     margin-bottom: 12px;
 }
@@ -975,8 +972,8 @@ img {
 
 .form {
     width: 528px;
-    padding-left: 40px;
-    padding-right: 40px;
+    height: 581px;
+    padding: 40px 40px;
 }
 
 .form-field {
@@ -1027,7 +1024,7 @@ img {
 
 .form-textarea {
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 textarea {
@@ -1063,6 +1060,7 @@ textarea:focus {
     position: relative;
     display: flex; 
     justify-content: flex-end;
+    margin: 0;
    
     width: 425px;
 
@@ -1115,4 +1113,27 @@ textarea:focus {
     text-decoration-line: underline;
 
     color: var(--accent-color);
+}
+
+/* Кнопка-відправити */
+.send {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translate(164px, -40px);
+  
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    border: none;
+    padding: 10px 52px;
+    
+    
+    color: var(--hat-text-color);
+    background: var(--accent-background-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }
