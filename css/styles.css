@@ -852,12 +852,12 @@ img {
     padding-top: 15px;
     padding-left: 16px;
     padding-bottom: 15px;
-
     min-width: 358px;
-
     margin-right: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+
     border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: var(--hat-text-color);
     background-color: var(--secondary-background-color);
 }
 
@@ -944,6 +944,7 @@ img {
     text-align: center;
     letter-spacing: 0.03em;
 
+    padding-top: 40px;
     margin: 0;
     margin-bottom: 12px;
 }
@@ -952,13 +953,9 @@ img {
     display: flex;
     position: absolute;
     cursor: pointer;
-    top: 0;
-    right: 0;
-  
-    margin-right: 8px;
-    margin-top: 0;
+    top: 8px;
+    right: 8px;
     padding: 6px;
-
     border-radius: 50%;
     
     background-color: var(--hat-text-color);
@@ -974,8 +971,10 @@ img {
 
 .form {
     width: 528px;
-    height: 581px;
-    padding: 40px 40px;
+   
+    padding-left: 40px;
+    padding-right: 40px;
+    
 }
 
 .form-field {
@@ -1008,6 +1007,7 @@ img {
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
+    display: block;
         
     color: var(--text-color);   
 }
@@ -1030,7 +1030,7 @@ img {
 
 .form-textarea {
     position: relative;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 textarea {
@@ -1039,6 +1039,7 @@ textarea {
     padding: 12px 16px;
     margin-top: 4px;
     cursor: pointer;
+    display: block;
 
     width: 100%;
     min-height: 120px;
@@ -1068,7 +1069,8 @@ textarea:focus {
     position: relative;
     display: flex; 
     justify-content: flex-end;
-    margin: 0;
+    margin-bottom: 30px;
+    
    
     width: 425px;
     
@@ -1138,6 +1140,7 @@ textarea:focus {
     cursor: pointer;
     border: none;
     padding: 10px 52px;
+    margin: 0;
     
     
     color: var(--hat-text-color);
